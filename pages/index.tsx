@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
       </Head>
       
         <Navbar />
-        <div className='w-screen h-[calc(100vh-78px)] bg-toronto bg-no-repeat bg-cover bg-center'>
+        <div className='w-screen min-hh-[calc(100vh-78px)] bg-toronto bg-no-repeat bg-cover bg-center'>
           <div className='bg-black/95 bg-cover w-screen h-[calc(100vh-78px)]'>
             <Cover />
           </div>
