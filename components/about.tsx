@@ -40,13 +40,14 @@ export const About: React.FC = () => {
         <h2 className='text-5xl text-center pb-10'>Tools and Technologies:</h2>
         </>
         <div className='grid gridrows-2 grid-cols-4 place-items-center gap-10 p-10'>
-        <div>
+        <div className='relative'>
             <DiJava 
-            className='text-7xl md:text-9xl opacity-100 hover:opacity-0 relative'
-            />
-            <p className='text-5xl md:text-7xl opacity-0 hover:opacity-100 relative'>
-                Java
-            </p>
+            className='text-7xl md:text-9xl opacity-100 hover:opacity-0 absolute'
+            >
+            </DiJava>
+                <p className='text-5xl md:text-7xl opacity-0 hover:opacity-100 absolute'>
+                    Java
+                </p>
         </div>
         <DiPython 
         className='text-7xl md:text-9xl'
