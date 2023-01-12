@@ -5,6 +5,7 @@ import { SiC, SiCsharp } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import Image from 'next/image';
+import profilefrance from './/../public/profilefrance.jpg'
 
 export const About: React.FC = () => {
     //h-[calc(100vh-78px)] 
@@ -14,7 +15,7 @@ export const About: React.FC = () => {
             <>
             <Image 
                 // sizes="(min-width: 768px) 80px, 60px"
-                src="/../public/profilefrance.jpg"
+                src={profilefrance}
                 className='rounded-full '
                 height={400}
                 width={500}
