@@ -6,9 +6,13 @@ import { FaAws } from 'react-icons/fa';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import Image from 'next/image';
 import profilefrance from './/../public/profilefrance.jpg'
+import {useState} from 'react';
 
 export const About: React.FC = () => {
     //h-[calc(100vh-78px)] 
+    const [isHovering, setIsHovered] = useState(false);
+    const onMouseEnter = () => setIsHovered(true);
+    const onMouseLeave = () => setIsHovered(false);
     return <div id='about' className="py-10 bg-green-400 min-h-[calc(100vh-78px)]">
         {/* <div className='grid auto-rows-min p-10 '> */}
         <div className='flex flex-row p-10 place-content-center items-center flex-wrap lg:flex-nowrap'>
@@ -41,14 +45,19 @@ export const About: React.FC = () => {
         <h2 className='text-5xl text-center pb-10'>Tools and Technologies:</h2>
         </>
         <div className='grid gridrows-2 grid-cols-4 place-items-center gap-10 p-10'>
-        <div className='relative'>
-            <DiJava 
-            className='text-7xl md:text-9xl opacity-100 hover:opacity-0 absolute'
-            >
-            </DiJava>
-                <p className='text-5xl md:text-7xl opacity-0 hover:opacity-100 absolute'>
+        <div className='relative flex place-content-center items-center'
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}>
+            
+                {isHovering ? 
+                (<p className='text-5xl md:text-7xl p-10 absolute z-10 animate-pulse'>
                     Java
-                </p>
+                </p>) :
+                (<DiJava 
+            className='text-7xl md:text-9xl absolute  z-10 '
+            >
+            </DiJava>)
+            }
         </div>
         <DiPython 
         className='text-7xl md:text-9xl'
@@ -72,10 +81,6 @@ export const About: React.FC = () => {
         className='text-7xl md:text-9xl'
         />
         </div>
-
-        {/* <div className='place-self-center p-10'>
-            <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true}/>
-        </div> */}
 
     </div>
 }
