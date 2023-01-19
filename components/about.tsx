@@ -1,12 +1,14 @@
 import { ExpTimeline } from '../components/exptimeline';
 import NextNProgress from 'nextjs-progressbar';
-import { DiJava, DiJsBadge, DiGit, DiMysql, DiPython } from 'react-icons/di';
+import { DiJava, DiJsBadge, DiGit, DiMysql, DiPython, DiJavascript } from 'react-icons/di';
 import { SiC, SiCsharp } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import Image from 'next/image';
 import profilefrance from './/../public/profilefrance.jpg'
 import {useState} from 'react';
+import { ExpIcon } from './expicon';
+import { IconType } from 'react-icons/lib';
 
 export const About: React.FC = () => {
     //h-[calc(100vh-78px)] 
@@ -45,41 +47,14 @@ export const About: React.FC = () => {
         <h2 className='text-5xl text-center pb-10'>Tools and Technologies:</h2>
         </>
         <div className='grid gridrows-2 grid-cols-4 place-items-center gap-10 p-10'>
-        <div className='relative flex place-content-center items-center'
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}>
-            
-                {isHovering ? 
-                (<p className='text-5xl md:text-7xl p-10 absolute z-10 animate-pulse'>
-                    Java
-                </p>) :
-                (<DiJava 
-            className='text-7xl md:text-9xl absolute  z-10 '
-            >
-            </DiJava>)
-            }
-        </div>
-        <DiPython 
-        className='text-7xl md:text-9xl'
-        />
-        <DiJsBadge 
-        className='text-7xl md:text-9xl'
-        />
-        <SiC 
-        className='text-7xl md:text-9xl'
-        />
-        <DiGit 
-        className='text-7xl md:text-9xl'
-        />
-        <AiOutlineConsoleSql 
-        className='text-7xl md:text-9xl'
-        />
-        <SiCsharp 
-        className='text-7xl md:text-9xl'
-        />
-        <FaAws 
-        className='text-7xl md:text-9xl'
-        />
+        <ExpIcon text='Java' Icon={DiJava as IconType}/>
+        <ExpIcon text='Python' Icon={DiPython as IconType}/>
+        <ExpIcon text='JavaScript' Icon={DiJsBadge as IconType}/>
+        <ExpIcon text='C Lang' Icon={SiC as IconType}/>
+        <ExpIcon text='Git' Icon={DiGit as IconType}/>
+        <ExpIcon text='SQL' Icon={AiOutlineConsoleSql as IconType}/>
+        <ExpIcon text='C Sharp' Icon={SiCsharp as IconType}/>
+        <ExpIcon text='AWS' Icon={FaAws as IconType}/>
         </div>
 
     </div>
