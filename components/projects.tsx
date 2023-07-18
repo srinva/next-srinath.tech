@@ -9,7 +9,7 @@ import profileswiss from './/../public/profileswiss.jpg'
 import {useState} from 'react';
 import { ExpIcon } from './expicon';
 import { IconType } from 'react-icons/lib';
-import { ProjectCard } from './projectcard';
+// import { ProjectCard } from './projectcard';
 
 export const Projects: React.FC = () => {
     //h-[calc(100vh-78px)] 
