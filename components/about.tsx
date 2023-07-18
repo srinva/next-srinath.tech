@@ -31,7 +31,7 @@ export const About: React.FC = () => {
             <div className='content-center justify-center p-10'>
                 <h1 className='text-6xl text-center pb-10'>About Me</h1>
                 <p className='text-xl font-semibold'>
-                    Hey! My name is Srinath, and it's great to meet you!
+                    Hey! My name is Srinath, and it&apos;s great to meet you!
                 </p>
                 <br/>
                 <p className='text-xl font-semibold'>

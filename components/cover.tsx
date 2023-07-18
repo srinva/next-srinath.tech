@@ -18,7 +18,7 @@ export const Cover: React.FC = () => {
         </div>
         <div className='place-self-center'>
             <div className='inline-block font-medium leading-tight text-5xl mt-0 mb-2'>
-                I'm&nbsp;
+                I&apos;m&nbsp;
             </div>
             <div className='inline-block'>
             <Typewriter 
