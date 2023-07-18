@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/navbar'
 import { Cover } from '../components/cover'
 import { About } from '../components/about'
+import { Projects } from '../components/projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
         <About />
+        <Projects />
 
 
       

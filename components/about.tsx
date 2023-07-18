@@ -5,7 +5,7 @@ import { SiC, SiCsharp } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import Image from 'next/image';
-import profilefrance from './/../public/profilefrance.jpg'
+import profileswiss from './/../public/profileswiss.jpg'
 import {useState} from 'react';
 import { ExpIcon } from './expicon';
 import { IconType } from 'react-icons/lib';
@@ -21,7 +21,7 @@ export const About: React.FC = () => {
             <>
             <Image 
                 // sizes="(min-width: 768px) 80px, 60px"
-                src={profilefrance}
+                src={profileswiss}
                 className='rounded-full '
                 height={400}
                 width={500}
@@ -30,13 +30,13 @@ export const About: React.FC = () => {
             </>
             <div className='content-center justify-center p-10'>
                 <h1 className='text-6xl text-center pb-10'>About Me</h1>
-                <p className='text-lg'>
+                <p className='text-xl font-semibold'>
                     Hey! My name is Srinath, and it's great to meet you!
                 </p>
                 <br/>
-                <p className='text-lg'>
+                <p className='text-xl font-semibold'>
                     Currently, I am a 3rd year studying Computer Science at North Carolina State University.
-                    I have interests in topics such as Cloud Computing, Software Development, Site Reliability/DevOps, and more!
+                    I have interests in topics such as Cloud Computing, Software Development, Infrastructure, DevOps, and more!
                     I have various internship and research experience in Computer Science - go ahead and contact me for my Resume.
                     Also feel free to reach out if you would like to collaborate on a project!
                 </p>
