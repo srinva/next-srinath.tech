@@ -1,0 +1,7 @@
+.overlapGrid {
+    display: grid;
+    grid-template-areas: "overlay";
+  }
+  .overlapGrid > div {
+    grid-area: overlay;
+  }

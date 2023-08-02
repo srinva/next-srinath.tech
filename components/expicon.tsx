@@ -4,7 +4,7 @@ import { IconType } from "react-icons/lib";
 type IconProps = {
     text: string;
     Icon: IconType;
-  };
+};
 
 export const ExpIcon: React.FC<IconProps> = ({text, Icon}: IconProps) => {
     const [isHovering, setIsHovered] = useState(false);

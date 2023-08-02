@@ -28,7 +28,7 @@ export const Cover: React.FC = () => {
                         strings: [
                             ' <strong class="text-transparent bg-clip-text bg-gradient-to-r from-white to-green-400">Srinath.</strong>',
                             ' a Developer.',
-                            ' an SRE.',
+                            ' an Engineer.',
                             ' a Problem Solver.'
                         ],
                         autoStart: true,
