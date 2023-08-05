@@ -4,9 +4,6 @@ import { ProjectCard } from './projectcard';
 
 export const Projects: React.FC = () => {
     //h-[calc(100vh-78px)] 
-    const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
-    const onMouseLeave = () => setIsHovered(false);
     return <div id='projects' className="py-10 bg-black-400 min-h-[calc(100vh-78px)/2]">
         {/* <div className='grid auto-rows-min p-10 '> */}
         <div className='flex flex-row p-10 place-content-center items-center flex-wrap lg:flex-nowrap'>
@@ -14,7 +11,7 @@ export const Projects: React.FC = () => {
                 <h1 className='text-6xl text-center pb-10'>Featured Projects</h1>
             </div>
         </div>
-        <div className='flex flex-row p-10 pb-20'>
+        <div className='flex flex-row p-10 pb-20 '>
             <ProjectCard url="https://github.com/srinva/next-srinath.tech" title="Personal Website" text="I maintain a personal website to showcase a few projects as well as general information about myself here. 
             Development in ongoing and new things are always being added!"/>
             <ProjectCard url="https://drive.google.com/file/d/17wMUM2Y907Z8FHfmGijMBu2djAmKiJMW/view" title="Nature-Inspired Algorithms Research" text="I conducted an undergraduate research project to explore the use of an optimization algorithm 

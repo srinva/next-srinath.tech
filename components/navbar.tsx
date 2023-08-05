@@ -27,9 +27,9 @@ export const Navbar: React.FC = () => {
                     <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white mr-4">
                         Projects
                     </a>
-                    {/* <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white">
+                    <a href="#contacts" className="block mt-4 lg:inline-block lg:mt-0 text-green-200 hover:text-white">
                         Contact
-                    </a> */}
+                    </a>
                 </div>
             </div>
         </nav>
