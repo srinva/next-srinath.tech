@@ -29,13 +29,13 @@ export const About: React.FC = () => {
                 />
             </>
             <div className='content-center justify-center p-10'>
-                <h1 className='text-6xl text-center pb-10'>About Me</h1>
-                <p className='text-xl font-semibold'>
+                <h1 className='text-6xl text-center pb-10 text-white'>About Me</h1>
+                <p className='text-xl font-semibold text-white'>
                     Hey! My name is Srinath, and it&apos;s great to meet you!
                 </p>
                 <br/>
-                <p className='text-xl font-semibold'>
-                    Currently, I am a 3rd year studying Computer Science at North Carolina State University.
+                <p className='text-xl font-semibold text-white'>
+                    Currently, I am a Master's student studying Computer Science at North Carolina State University.
                     I have interests in topics such as Cloud Computing, Software Development, Infrastructure, DevOps, and more!
                     I have various internship and research experience in Computer Science - go ahead and contact me for my Resume.
                     Also feel free to reach out if you would like to collaborate on a project!
@@ -44,7 +44,7 @@ export const About: React.FC = () => {
         
         </div>
         <>
-        <h2 className='text-5xl text-center pb-10'>Tools and Technologies:</h2>
+        <h2 className='text-5xl text-center pb-10 text-white'>Tools and Technologies:</h2>
         </>
         <div className='grid gridrows-2 grid-cols-4 place-items-center gap-10 p-10'>
         <ExpIcon text='Java' Icon={DiJava as IconType}/>

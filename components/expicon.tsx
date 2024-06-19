@@ -15,11 +15,11 @@ export const ExpIcon: React.FC<IconProps> = ({text, Icon}: IconProps) => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}>
             {isHovering ? 
-                (<p className='text-5xl md:text-7xl p-10 absolute z-10 animate-pulse'>
+                (<p className='text-5xl md:text-7xl p-10 absolute z-10 animate-pulse text-white'>
                 {text}
             </p>) :
                 (
-                    <Icon className='text-7xl md:text-9xl'/>
+                    <Icon className='text-white text-7xl md:text-9xl'/>
                    )
             }
         </div>
