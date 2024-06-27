@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 80",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@next/font": "13.1.0",
     "@types/node": "18.11.17",
-    "@types/react": "^18.0.26",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "18.0.10",
     "eslint": "8.30.0",
     "eslint-config-next": "^14.2.4",
@@ -27,9 +27,9 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.3",
+    "autoprefixer": "^10.4.13",
     "eslint": "8.30.0",
     "eslint-config-next": "^14.2.4",
-    "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.3"
   }
