@@ -6,9 +6,20 @@ on:
     branches: [ main ]
 
 jobs:
-  build-site:
-    name: Build Site
+  nextjs-build:
+    name: Next.js Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker build .
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+  docker-build:
+    needs: nextjs-build
+    name: Docker Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker Image
+        run: docker build .
