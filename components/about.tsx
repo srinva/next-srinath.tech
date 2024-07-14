@@ -36,7 +36,7 @@ export const About: React.FC = () => {
                 <br/>
                 <p className='text-xl font-semibold text-white'>
                     Currently, I am a Master&apos;s student studying Computer Science at North Carolina State University.
-                    I have interests in topics such as Cloud Computing, Software Development, Infrastructure, DevOps, and more!
+                    I mostly have interests in topics such as Cloud Computing, Software Development, Infrastructure, DevOps.
                     I have various internship and research experience in Computer Science - go ahead and contact me for my Resume.
                     Also feel free to reach out if you would like to collaborate on a project!
                 </p>

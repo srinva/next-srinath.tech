@@ -14,7 +14,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({text, title, url}: ProjectP
     return <div className="max-w-xs mx-auto flex items-center space-x-4"
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}>
-    <div >
+    <div className='pb-10 lg:pb-0'>
         {isHovering ? 
         (<div className='bg-green-400 rounded-xl shadow-lg p-4'>
             <h2 className="text-xl font-bold text-white text-center p-3">{title}</h2>

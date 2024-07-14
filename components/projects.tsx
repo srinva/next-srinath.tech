@@ -11,7 +11,7 @@ export const Projects: React.FC = () => {
                 <h1 className='text-6xl text-center pb-10'>Featured Projects</h1>
             </div>
         </div>
-        <div className='flex flex-row p-10 pb-20 '>
+        <div className='flex flex-col lg:flex-row p-10 pb-20 '>
             <ProjectCard url="https://github.com/srinva/next-srinath.tech" title="Personal Website" text="I maintain a personal website to showcase a few projects as well as general information about myself here. 
             Development in ongoing and new things are always being added!"/>
             <ProjectCard url="https://drive.google.com/file/d/17wMUM2Y907Z8FHfmGijMBu2djAmKiJMW/view" title="Nature-Inspired Algorithms Research" text="I conducted an undergraduate research project to explore the use of an optimization algorithm 

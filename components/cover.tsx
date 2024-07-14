@@ -14,7 +14,7 @@ export const Cover: React.FC = () => {
               alt=""
             /></div> */}
         <div className='place-self-center'>
-            <h1 className='place-self-center text-white'>Hello World!</h1>
+            <p className='place-self-center text-white text-5xl font-bold leading-tight'>Hello World</p>
         </div>
         <div className='place-self-center text-white'>
             <div className='inline-block font-medium leading-tight text-5xl mt-0 mb-2'>

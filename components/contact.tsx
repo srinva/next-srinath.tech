@@ -13,10 +13,10 @@ export const Contact: React.FC = () => {
         {/* <div className='grid auto-rows-min p-10 '> */}
         <div className='flex flex-row p-10 place-content-center items-center flex-wrap lg:flex-nowrap'>
             <div className='content-center justify-center p-10'>
-                <h1 className='text-6xl text-center pb-10 text-white'>Get In Touch</h1>
+                <h1 className='text-6xl text-center lg:pb-10 text-white'>Get In Touch</h1>
             </div>
         </div>
-        <div className='flex flex-row p-10 pb-20 justify-center space-x-52 text-white'>
+        <div className='flex flex-col items-center lg:items-stretch lg:flex-row p-10 pb-20 justify-center lg:space-x-52 text-white'>
             <Link href='https://www.linkedin.com/in/srinath-vasudevan-a8a76a18a/' target='_blank'
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}>
