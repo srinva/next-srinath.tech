@@ -17,7 +17,7 @@ export const Cover: React.FC = () => {
             <p className='place-self-center text-white text-5xl font-bold leading-tight'>Hello World</p>
         </div>
         <div className='place-self-center text-white'>
-            <div className='inline-block font-medium leading-tight text-5xl mt-0 mb-2'>
+            <div className='inline-block font-medium leading-tight text-4xl mt-0 mb-2'>
                 I&apos;m&nbsp;
             </div>
             <div className='inline-block'>
@@ -28,12 +28,12 @@ export const Cover: React.FC = () => {
                         strings: [
                             ' <strong class="text-transparent bg-clip-text bg-gradient-to-r from-white to-green-400">Srinath.</strong>',
                             ' a Developer.',
-                            ' a Cloud Engineer.',
+                            ' an Engineer.',
                             ' a Problem Solver.'
                         ],
                         autoStart: true,
-                        wrapperClassName: 'font-medium leading-tight text-5xl mt-0 mb-2 text-white',
-                        cursorClassName: 'font-medium leading-tight text-5xl mt-0 mb-2 text-white'
+                        wrapperClassName: 'font-medium leading-tight text-4xl mt-0 mb-2 text-white',
+                        cursorClassName: 'font-medium leading-tight text-4xl mt-0 mb-2 text-white'
                     }
                 }
             />
