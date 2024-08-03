@@ -1,4 +1,4 @@
-name: Website build test
+name: Site Build
 on:
   push:
     branches: [ main ]
