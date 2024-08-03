@@ -1,4 +1,4 @@
-name: Release Build
+name: Site Release
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
       - name: Build
         run: npm run build
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.REGISTRY_URL }}/srinath-tech:latest .
+        run: docker build -t "${{ secrets.REGISTRY_URL }}/srinath-tech:latest" .
       - name: Push Docker Image
         run: |
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ${{ secrets.REGISTRY_URL }} -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-          docker push ${{ secrets.REGISTRY_URL }}/srinath-tech:latest
+          docker push "${{ secrets.REGISTRY_URL }}/srinath-tech:latest"
