@@ -4,6 +4,10 @@ metadata:
   name: nginx-ingress
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - srinath.tech
+    secretName: tls-secret
   rules:
   - host: srinath.tech
     http:
@@ -15,7 +19,3 @@ spec:
             name: srinath-tech-service
             port:
               number: 3000
-  tls:
-  - hosts:
-    - srinath.tech
-    secretName: tls-secret
