@@ -39,3 +39,4 @@ certificates
 vke*
 docker-config.json
 k8s/website/secret.yaml
+k8s/website/clusterissuer.yaml
