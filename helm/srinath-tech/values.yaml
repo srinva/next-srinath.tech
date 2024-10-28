@@ -26,18 +26,23 @@ ingress:
   createDefault:
     enabled: true
   className: "nginx"
-  annotations: {}
+  annotations:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: tls-secret
   hosts:
     - host: srinath.tech
       paths:
         - path: /
           pathType: Prefix
-          
+    - host: www.srinath.tech
+      paths:
+        - path: /
+          pathType: Prefix
   tls: 
   - hosts:
     - srinath.tech
+    - www.srinath.tech
     secretName: tls-secret
 
 resources: {}
